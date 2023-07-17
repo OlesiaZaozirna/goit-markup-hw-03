@@ -195,7 +195,7 @@ img {
 }
 
 .advantges-item {
-  width: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .advantages-text {
   color: var(--slate-color);
@@ -250,10 +250,8 @@ img {
 
 .team-item {
   background-color: var(--white-color);
-  flex-basis: calc((100% - 3*24px) / 4))
-   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .teammate-card {
@@ -341,6 +339,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .projects-block-text {
