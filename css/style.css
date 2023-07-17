@@ -194,7 +194,7 @@ img {
   align-content: stretch;
 }
 
-.advantges-item {
+.advantаges-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .advantages-text {
