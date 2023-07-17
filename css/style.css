@@ -194,8 +194,8 @@ img {
   align-content: stretch;
 }
 
-.advantаges-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+.advantages-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .advantages-text {
   color: var(--slate-color);
