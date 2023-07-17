@@ -33,7 +33,9 @@ ul {
 .list {
   list-style-type: none;
 }
-
+img {
+  display: block;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -56,11 +58,19 @@ ul {
 
 /**------------Header------------**/
 .header {
-  padding: 24px 0;
+  padding: 0x 0;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 .hero {
   padding: 188px 0;
+}
+.hero-container {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
 }
 .header-logo {
   color: var(--iris-color);
@@ -70,8 +80,16 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+.header-menu-item {
+  padding: 24px 0;
+}
 .header-logo-two {
   color: var(--navyblue-color);
   font-family: "Raleway";
@@ -99,6 +117,18 @@ ul {
   color: var(--ocean-color);
 }
 
+.menu-address {
+  display: flex;
+}
+.menu-address-item {
+  padding: 24px 0;
+}
+
+.menu-address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .menu-address-link:hover,
 .menu-address-link:focus,
 .menu-address-link:active {
@@ -110,6 +140,8 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
 }
 
 .hero {
@@ -124,12 +156,19 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .hero-btn {
   background-color: var(--iris-color);
   color: var(--white-color);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 48px auto 0;
 }
 
 .hero-btn:hover,
@@ -155,13 +194,18 @@ ul {
   align-content: stretch;
 }
 
+.advantges-item {
+  width: calc((100% - 72px) / 4);
+}
 .advantages-text {
   color: var(--slate-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.advantages-subtitle {
+  margin-bottom: 8px;
+}
 /*--------------Works---------------*/
 
 .works {
@@ -175,9 +219,9 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .works-list {
-  margin-top: 72px;
   display: flex;
   gap: 24px;
 }
@@ -206,6 +250,7 @@ ul {
 
 .team-item {
   background-color: var(--white-color);
+  flex-basis: calc((100% - 3*24px) / 4))
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px;
@@ -218,7 +263,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 0 8px 0;
+  margin-bottom: 8px;
 }
 
 .teammate-card-text {
@@ -228,6 +273,9 @@ ul {
   line-height: 1.5x;
   letter-spacing: 0.02em;
   padding: 0 0 32px 0;
+}
+.team-container {
+  padding: 32px 16px;
 }
 
 /*-------------Footer-----------------*/
@@ -243,6 +291,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-two {
@@ -260,7 +310,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /*-------------Page Portfolio---------------*/
@@ -273,6 +322,9 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
 }
 
 .projects-btn:hover,
@@ -280,6 +332,7 @@ ul {
 .projects-btn:active {
   background-color: var(--ocean-color);
   color: var(--white-color);
+  border: 1px solid transparent;
 }
 
 .projects-block-title {
@@ -295,4 +348,29 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.pprojects {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.projects-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.projects-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.projects-block-item {
+  width: calc((100% - 48px) / 3);
+}
+.project-block-container {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+  margin-bottom: 8px;
 }
